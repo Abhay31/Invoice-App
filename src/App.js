@@ -38,7 +38,7 @@ function App() {
     window.print();
   }
 
-  
+
 
   return (
     <>
@@ -131,7 +131,7 @@ function App() {
                   <TableForm description={description} setDescription={setDescription} quantity={quantity} setQuantity={setQuantity} price={price} setPrice={setPrice} amount={amount} setAmount={setAmount} list={list} setList={setList} total={total} setTotal={setTotal} />
                 </article>
 
-                <label htmlFor="notes">Note</label>
+                <label htmlFor="notes" className="mt-5">Note</label>
                 <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Additional notes to the client" autoComplete="off" value={notes} onChange={(e) => { setNotes(e.target.value) }} ></textarea>
 
                 <button className="bg-blue-500 text-white font-bold py-2 px-8 rounded shadow border-2 border-blue-500 hover:bg-transparent hover:text-blue-500 transition-all duration-300" onClick={() => { setShowInvoice(true) }}>Preview Invoice</button>
